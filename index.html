@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Jesus | 遇見真實的耶穌</title>
+    <meta name="description" content="透過視覺化數據、地圖與互動體驗，輕鬆無痛認識耶穌生平。提供讀經計畫、小組教材與生命處方籤。">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #B8860B; /* 金色 */
+            --dark: #2c3e50;    /* 深藍 */
+            --light: #faf9f6;   /* 米白 */
+        }
+        body {
+            margin: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        h1, h2, h3 { font-family: 'Noto Serif TC', serif; }
+        
+        /* 英雄區塊 (第一眼看到的畫面) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 { font-size: 4rem; margin-bottom: 0.5rem; color: var(--primary); }
+        .hero p { font-size: 1.5rem; opacity: 0.9; max-width: 600px; line-height: 1.6; }
+        
+        /* 按鈕特效 */
+        .cta-button {
+            margin-top: 40px;
+            padding: 15px 50px;
+            font-size: 1.2rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 特色介紹區 */
+        .features {
+            padding: 80px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid var(--primary);
+        }
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; display: block; }
+        
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: var(--dark);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Re:Jesus</h1>
+        <p>穿越時空，在每一個春夏秋冬裡與祂同行。<br>不用神學背景，也能輕鬆看懂的耶穌生平資料庫。</p>
+        
+        <a href="https://https://rejesus.streamlit.app/" class="cta-button">開始探索旅程</a>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <span class="feature-icon">🌍</span>
+            <h3>互動地圖</h3>
+            <p>跟隨耶穌的腳蹤，看見祂在加利利與耶路撒冷的真實行蹤。</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">💊</span>
+            <h3>生命處方</h3>
+            <p>感到焦慮或孤單？輸入心情，讓耶穌的話語成為你的力量。</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">📱</span>
+            <h3>IG 金句卡</h3>
+            <p>一鍵生成精美金句卡片，分享信仰不再有壓力。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Re:Jesus Project. Powered by Streamlit & Vercel.</p>
+    </footer>
+
+</body>
+</html>
